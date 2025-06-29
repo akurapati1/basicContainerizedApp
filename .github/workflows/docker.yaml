@@ -26,4 +26,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: yourdockerhubname/docker-github-actions-app:latest
+        tags: abhilashkurapati557/docker-github-actions-app:latest
