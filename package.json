@@ -1,11 +1,15 @@
 {
   "name": "docker-github-actions-app",
   "version": "1.0.0",
+  "description": "Minimal Express app demonstrating Docker and a GitHub Actions build pipeline",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node --test"
   },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.21.2"
   }
 }
