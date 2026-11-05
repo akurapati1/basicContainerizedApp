@@ -23,6 +23,11 @@ curl localhost:3000/health
 ```
 Or pull the published image: `docker run --rm -p 3000:3000 abhilashkurapati557/docker-github-actions-app:latest`
 
+## Deploy for free
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/akurapati1/basicContainerizedApp)
+
+The included `render.yaml` builds the Dockerfile on Render's **free** plan (sign in with GitHub, no card). The app reads Render's `PORT` automatically; check `/health` once live. Free services sleep when idle.
+
 ## What the Dockerfile demonstrates
 - Small base image (`node:20-alpine`) and **layer caching** (dependencies installed before source is copied)
 - Reproducible, production-only installs (`npm ci --omit=dev`)
